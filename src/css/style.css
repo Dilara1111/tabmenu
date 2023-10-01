@@ -43,8 +43,10 @@ i:hover{
     height: 500px;
     overflow: hidden;
 }
+
 .tabs{
     display: flex;
+    justify-content: center;
   }
   .tabs div{
     border: 1px solid black;
@@ -57,6 +59,8 @@ i:hover{
     display: none;
     border: 1px solid black;
     padding: 20px;
+    width: 100%;
+    text-align: center;
   }
   .active{
     background-color: aqua !important;
@@ -65,4 +69,4 @@ i:hover{
   .show{
     display: block !important;
   }
-  
+ 

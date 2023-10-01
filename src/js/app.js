@@ -37,14 +37,9 @@ nextBtn.addEventListener('click',()=>{
 
 sliderContainer.addEventListener('mouseenter',()=>{
     clearInterval(autoPlayInterval);
-    });
-
-
-
-
-    
-  
+    });  
 })
+
 let tabs=document.querySelectorAll(".tabs div")
 let tabContents=document.querySelectorAll(".content div")
 
@@ -64,4 +59,19 @@ let tabContents=document.querySelectorAll(".content div")
                 }
             }
         })
+    }
+
+    function todoList() {
+        var newTodoList = document.getElementById("new-todo-list").value;
+        if (newTodoList === "") {
+            alert("Enter.");
+            return;
+        }
+    
+        var todoList = document.getElementById("list1");
+        var list1 = document.createElement("li");
+        list1.appendChild(document.createTextNode(newTodoList));
+        todoList.appendChild(list1);
+    
+        document.getElementById("new-to-do-list").value = "";
     }
